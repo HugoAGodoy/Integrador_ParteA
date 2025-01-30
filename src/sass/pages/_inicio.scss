@@ -1,11 +1,20 @@
-// .section-cards {
-//     background-color: #f1f2f3;
-//     padding: 1rem;
-// }
+body{
+     background: radial-gradient(circle, 
+        #ff9c09 0%,        
+        #e47506 50%,       
+        #9e4f00 100%      
+      );
+}
 
-// .cards-container {
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: center;
-//     gap: 1rem;
-// }
+
+.section-cards {
+    // background-color: #f1f2f3;
+    padding: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}

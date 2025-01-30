@@ -1,14 +1,23 @@
-// .card {
+$background: radial-gradient(circle, 
+        #ff9c09 0%,        
+        #e47506 50%,       
+        #9e4f00 100%   
+           
+      );
 
-//     min-width: 400px;
-//     max-width: 500px;
-//     height: 200px;
 
-//     background-color: orange;
-//     border-top-left-radius: 5px;
-//     border-top-right-radius: 5px;
-//     overflow: hidden;
-//     box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
+.card {
+
+    min-width: 400px;
+    max-width: 500px;
+    height: 200px;
+
+    background-color: $background;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
 
 //     transition: transform .2s; /* ! No puede ser all */
 
@@ -85,4 +94,4 @@
 //         }
 //     }
 
-// }
+}

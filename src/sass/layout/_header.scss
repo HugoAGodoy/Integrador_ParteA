@@ -1,164 +1,202 @@
-// /* ----------------------------------------------- */
-// /* HEADER                                          */
-// /* ----------------------------------------------- */
-// /* MOBILE FIRST */
-// .main-header {
-//     display: flex;
-//     flex-direction: column-reverse;
+$background: radial-gradient(circle, 
+   #ff9900 0%,       
+   #cc6600 50%,       
+   #361c01 100%    
+  
+      );
+body{
+    background-color: $background;
 
-//     @media screen and (min-width: 992px) {
-//         & {
-//             flex-direction: column;
-//         }
-//     }
-// }
+  
+}
 
-// #menu {
-//     display: none;
+/* ----------------------------------------------- */
+/* HEADER                                          */
+/* ----------------------------------------------- */
+/* MOBILE FIRST */
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid 2px orange;
+    padding-top: 5px;
+   
+  
 
-//     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: column;
+        }
+    }
+}
 
-//     &:checked + .nav-bar { //el + para vincular con el hermano subsiguiente, si no es subsiguiente se usa alt+126 ~
-//         display: block;
-//     }
-//     /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
-//     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-//         background-color: yellow;
-//     }
-// }
+#menu {
+    display: none;
 
-// /* ----------------------------------------------- */
-// /* NAVBAR                                          */
-// /* ----------------------------------------------- */
+    /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
 
-// .nav-bar {
-//     background-color: mediumaquamarine;
-//     display: none;
+    &:checked + .nav-bar { //el + para vincular con el hermano subsiguiente, si no es subsiguiente se usa alt+126 ~
+        display: block;
+    }
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: $background;
+    }
+}
 
-//     &__nav-list { /* .nav-bar__nav-list */
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         list-style-type: none;
+/* ----------------------------------------------- */
+/* NAVBAR                                          */
+/* ----------------------------------------------- */
 
-//         @media screen and (min-width: 992px) {
-//             & {
-//                 flex-direction: row;
-//             } 
-//         }
-//     }
+.nav-bar {
+    background-color: $background;
+    display: none;
 
-//     &__nav-item { /* .nav-bar__nav-item */
-//         text-align: center;
-//         background-color: pink;
-//     }
+    &__nav-list { /* .nav-bar__nav-list */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
 
-//     &__nav-link {
-//         display: block;
-//         background-color: purple;
-//         padding: 1rem 2rem;
-//         color: white;
-//     }
+        @media screen and (min-width: 992px) {
+            & {
+                flex-direction: row;
+                gap: 0.5em;
+                
+            } 
+        }
+    }
 
-//     @media screen and (min-width: 992px) {
-//         & {
-//             display: block;
-//         }
-//     }
-// }
+    &__nav-item { /* .nav-bar__nav-item */
+        text-align: center;
+        background-color: $background;
+        border: solid 1px orange;
+        border-radius: 2em;
+    }
 
-// /* ----------------------------------------------- */
-// /* SEARCH BAR                                          */
-// /* ----------------------------------------------- */
+    &__nav-link {
+        display: block;
+        background-color: $background;
+        padding: 1rem 2rem;
+        // color: white;
+        border: solid 1px orange;
+        border-radius: 2em;
+    }
 
-// .search-bar {
-//     display: flex;
-//     background-color: olivedrab;
-//     justify-content: space-around;
+    @media screen and (min-width: 992px) {
+        & {
+            display: block;
+        }
+    }
+}
 
-//     &__logo-container { /* .search-bar__logo-container */
-//         width: 18.75rem;
-//         height: 3.75rem;
-//     }
+/* ----------------------------------------------- */
+/* SEARCH BAR                                          */
+/* ----------------------------------------------- */
 
-//     &__form-container { /* .search-bar__form-container */
-//         padding: 1rem;
+.search-bar {
+    display: flex;
 
-//         background-color: gold;
-//         display: flex;
-//         flex-basis: 100%;
-//         justify-content: center;
+    
+    // background-color: $background;
+    border: solid 2px orange;
+    margin: 3px;
+    border-radius: 0.5em;
 
-//     }
+    justify-content: space-around;
 
-//     &__form-label {
-//         background-color: greenyellow;
-//     }
+    &__logo-container { /* .search-bar__logo-container */
+        width: 18.75rem;
+        height: 3.75rem;
+        
+    }
 
-//     &__form-search {
-//         background-color: deeppink;
-//     }
+    &__form-container { /* .search-bar__form-container */
+        padding: 1rem;
 
-//     &__form-submit {
-//         background-color: darkslategray;
-//     }
+        // background-color: $background;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
 
-//     &__carrito-container {
-//         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-//         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-//         background-color: goldenrod;
-//     }
-// }
+       
+    }
 
-// /* ----------------------------------------------- */
-// /* MENÚ TOOGLE                                     */
-// /* ----------------------------------------------- */
+    &__form-label {
 
-// .menu-toogle {
-//     display: block;
+        background-color: $background;
+        border: solid orange ;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;;
+       
+    }
 
-//     background-color: red;
-//     flex: 0 0 3rem;
-//     position: relative;
-//     cursor: pointer; /* manito */
+    &__form-search {
+        background-color: $background;
+    }
 
-//     &__label { /* .menu-toogle__label */
-//         display: block;
-//         background-color: black;
-//         height: 100%;
-//     }
+    &__form-submit {
+        background-color: $background;
+        border-top-right-radius: 0.5em ;
+        border-bottom-right-radius: 0.5em;
+    }
 
-//     &__top-bread, /* .menu-toogle__top-bread */
-//     &__meat, /* .menu-toogle__top-bread */
-//     &__bottom-bread { /* .menu-toogle__top-bread */
-//         displaY: block;
-//         background-color: #333;
-//         height: .2rem;
-//         position: absolute;
-//         left: .5rem;
-//         right: .5rem;
-//     }
+    &__carrito-container {
+        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        background-color: $background;
+    }
+}
 
-//     &__top-bread {
-//         top: .8rem;
-//     }
+/* ----------------------------------------------- */
+/* MENÚ TOOGLE                                     */
+/* ----------------------------------------------- */
 
-//     &__meat { /* Centrar sin usar flexbox */
-//         top: 50%; /* centrando verticalmente */
-//         margin-top: -.1rem;
-//     }
+.menu-toogle {
+    display: block;
 
-//     &__bottom-bread {
-//         bottom: .8rem;
-//     }
+    background-color: $background;;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer; /* manito */
 
-//     @media screen and (min-width: 992px) {
-//         & { /* .menu-toogle */
-//             display: none;  
-//         }
-//     }
+    &__label { /* .menu-toogle__label */
+        display: block;
+        background-color: black;
+        height: 100%;
+        border: solid 2px orange;
+    }
 
-// }
+    &__top-bread, /* .menu-toogle__top-bread */
+    &__meat, /* .menu-toogle__top-bread */
+    &__bottom-bread { /* .menu-toogle__top-bread */
+        displaY: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat { /* Centrar sin usar flexbox */
+        top: 50%; /* centrando verticalmente */
+        margin-top: -.1rem;
+    }
+
+    &__bottom-bread {
+        bottom: .8rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        & { /* .menu-toogle */
+            display: none;  
+        }
+    }
+
+}
 
 
 
