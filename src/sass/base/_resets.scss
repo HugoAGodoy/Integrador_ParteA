@@ -2,5 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: .5px solid red; */
+    border: .5px solid red; 
+    background: radial-gradient(circle, 
+        #ff9900 0%,        
+        #cc6600 50%,       
+        #663300 100%      
+      );
 }
