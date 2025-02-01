@@ -132,6 +132,14 @@ body{
 
     &__form-search {
         background-color: $background;
+        max-width:50%;
+
+        // @media screen and (max-width:100px){
+        //    & { 
+        //     width:50px;
+        //    }
+            
+        // }
     }
 
     &__form-submit {
@@ -142,6 +150,17 @@ body{
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        background-image: url('imagenes/carritoguitarra150B.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      
+     
+        
+        margin-right: 1em;
+        // width: 100%;
+        // border:#361c01 solid 2px;
+       
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
         background-color: $background;
     }
