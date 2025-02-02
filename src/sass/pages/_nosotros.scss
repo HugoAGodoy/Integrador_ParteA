@@ -1,0 +1,29 @@
+
+        // body {
+        //     font-family: Arial, sans-serif;
+        //     margin: 0;
+        //     padding: 0;
+        //     background-color: #b91919;
+        //     color: #333;
+        // }
+       
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            // padding-bottom: 60px;
+            background: rgb(226, 124, 41);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            border:#ff9c09 solid 3px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+   
+        .return {
+            // width: 50px;
+            // padding:2em;
+            margin-top: 30px;
+        }
