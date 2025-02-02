@@ -13,9 +13,9 @@ $background: radial-gradient(circle,
     height: 500px;
 
     background-color: $background;
-    
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border:#ff9c09 solid 3px;
+    border-radius: 5px;
+    // border-top-right-radius: 5px;
     overflow: hidden;
     // box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
 
