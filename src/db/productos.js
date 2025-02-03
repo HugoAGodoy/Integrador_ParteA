@@ -17,7 +17,7 @@ const productos = [
     id: 3, 
     nombre: "Gibson SG", 
     foto: "stars/angus-young-400.webp", 
-    descripcion: "Angus Young (ACDC)", 
+    descripcion: "Angus Young (AC/DC)", 
     precio: 444.40
   },
   { 

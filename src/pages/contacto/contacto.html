@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Guitarras Icónicas y Personalizadas</title>
+    
+</head>
+<body class="form-body">
+    
+    <form class="form-form" action="enviar_formulario.php" method="POST">
+        <!-- Datos personales -->
+        <h1 class="form-title">Funatics! Guitarras Icónicas y Personalizadas</h1>
+
+        <label for="nombre" >Nombre:</label>
+        <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="tel">Teléfono:</label>
+        <input class="form-input" type="tel" id="tel" name="tel" placeholder="Tu numero telefónico" required>
+
+        <!-- Influencias musicales -->
+        <label for="influencias">Influencias musicales:</label>
+        <textarea class="form-textarea" id="influencias" name="influencias" rows="4" placeholder="¿Qué músicos o bandas te inspiran?" required></textarea>
+
+        <!-- Modelos de guitarras favoritas -->
+        <label for="modelos">Modelos de guitarras favoritas:</label>
+        <input class="form-input" type="text" id="modelos" name="modelos" placeholder="Ej: Fender Stratocaster, Gibson Les Paul, etc." required>
+
+        <!-- Ideas personales -->
+        <label for="ideas">Cuéntanos tus ideas:</label>
+        <textarea class="form-textarea" id="ideas" name="ideas" rows="4" placeholder="¿Tienes alguna idea para una guitarra personalizada?" required></textarea>
+
+        <!-- Estilo de guitarra preferido -->
+        <label for="estilo">Estilo de guitarra preferido:</label>
+        <select class="form-select" id="estilo" name="estilo" required>
+            <option value="eléctrica">Eléctrica</option>
+            <option value="acústica">Acústica</option>
+            <option value="bajo">Bajo</option>
+        </select>
+
+        <!-- Experiencia previa con guitarras -->
+        <label for="experiencia">¿Cuánto tiempo llevas tocando guitarra?</label>
+        <select class="form-select" id="experiencia" name="experiencia" required>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+        </select>
+
+        <div class="button-container">
+            <button class="boton-enviar" type="submit">Enviar</button>
+        </div>
+   
+        <div  class="return">
+            <a href="../../../index.html">Volver a Inicio</a>
+         </div>
+
+    </form>
+    <script type="module" src="/src/main.js"></script> 
+</body>
+</html>

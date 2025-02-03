@@ -1,6 +1,7 @@
 @use './base/resets'; /* importar el parcial _resets.scss */
 @use './base/typography'; /* Los import tienen que estar arriba de todo */
 @use './layout/header';
+@use './pages/contacto';
 @use './pages/inicio';
 @use './components/cards';
 @use './pages/nosotros';
@@ -33,3 +34,9 @@
 -> _normalize.scss
 */
 
+.rocknroll-one-regular {
+    font-family: "RocknRoll One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
