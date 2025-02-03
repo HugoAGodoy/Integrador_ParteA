@@ -16,6 +16,7 @@ const start = () => {
 
     const boton3 = document.createElement('button');
     boton3.textContent = 'Guitarras';
+    boton3.id ='instr'
     botones.appendChild(boton3);
 
     const boton2 = document.createElement('button');

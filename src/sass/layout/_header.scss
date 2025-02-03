@@ -69,8 +69,8 @@ body{
     &__nav-item { /* .nav-bar__nav-item */
         text-align: center;
         background-color: $background;
-        border: solid 1px orange;
-        border-radius: 2em;
+        border: solid 1px rgb(0, 0, 0);
+        // border-radius: 2em;
     }
 
     &__nav-link {
@@ -79,7 +79,7 @@ body{
         padding: 1rem 2rem;
         // color: white;
         border: solid 1px orange;
-        border-radius: 2em;
+        // border-radius: 2em;
     }
 
     @media screen and (min-width: 992px) {
@@ -95,10 +95,10 @@ body{
 
 .search-bar {
     display: flex;
-
+background-color: #000000;
     
     // background-color: $background;
-    border: solid 2px orange;
+    border: solid 1px rgb(0, 0, 0);
     margin: 3px;
     border-radius: 0.5em;
 
@@ -122,15 +122,16 @@ body{
     }
 
     &__form-label {
-
+        color:orange;
         background-color: $background;
-        border: solid orange ;
+        border: solid orange 2px;
         border-top-left-radius: 0.5em;
-        border-bottom-left-radius: 0.5em;;
+        border-bottom-left-radius: .5em;;
        
     }
 
     &__form-search {
+        border: 2px solid orange;
         background-color: $background;
         // max-width:50%;
 
@@ -143,26 +144,39 @@ body{
     }
 
     &__form-submit {
+        border: solid orange 2px;
         background-color: $background;
         border-top-right-radius: 0.5em ;
         border-bottom-right-radius: 0.5em;
     }
 
+
+    &__logo-container{
+        margin-top:2px;
+        margin-bottom:2px;
+        margin-left: 5px;;
+        background-image: url('imagenes/logofun1.webp');
+        max-width:200px;
+        
+        background-size:cover;
+        // background-repeat: no-repeat;
+        
+        background-position:top;
+
+    }
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         background-image: url('imagenes/carritoguitarra150B.webp');
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-      
-     
-        
         margin-right: 1em;
         // width: 100%;
         // border:#361c01 solid 2px;
        
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: $background;
+        // background-color: $background;
+        border: 1px solid black;
     }
 }
 
@@ -217,6 +231,8 @@ body{
 
 }
 
-
+// #instr{
+//     display:none;
+// }
 
 
