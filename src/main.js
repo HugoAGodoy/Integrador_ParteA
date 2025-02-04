@@ -10,7 +10,7 @@ const start = () => {
     const botones = document.getElementById('botoncitos');
 
     const boton1 = document.createElement('button');
-    boton1.textContent = 'Guitarristas';
+    boton1.textContent = 'Musicos';
     boton1.id = 'imag'
     botones.appendChild(boton1);
 
@@ -21,6 +21,7 @@ const start = () => {
 
     const boton2 = document.createElement('button');
     boton2.textContent = 'Descripcion';
+    boton2.id="descrip"
     botones.appendChild(boton2);
 
 
