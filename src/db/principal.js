@@ -33,6 +33,27 @@ const principal = [
       foto: "guitars/Tele400B.webp", 
       descripcion: "", 
       precio: 666.60
+    },
+    { 
+      id: 6, 
+      nombre: "Fender Stratocaster", 
+      foto: "guitars/strato-frusciante.webp", 
+      descripcion: "", 
+      precio: 666.60
+    },
+    { 
+      id: 7, 
+      nombre:"ESP MX-220 'EET FUK'" , 
+      foto: "guitars/eetfuck400.webp", 
+      descripcion: "", 
+      precio: 666.60
+    },
+    { 
+      id: 8, 
+      nombre:"Gibson ES-355 'Lucille'" , 
+      foto: "guitars/lucille400jpg.webp", 
+      descripcion: "", 
+      precio: 666.60
     }
 ]
 

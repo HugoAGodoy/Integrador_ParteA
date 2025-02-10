@@ -6,7 +6,6 @@ import './sass/main.scss'
 const start = () => {
     console.warn('Se cargó todo el HTML');
 
-
     const botones = document.getElementById('botoncitos');
 
     const boton1 = document.createElement('button');
@@ -168,7 +167,20 @@ const start = () => {
         contenedorProductos.innerHTML = html3;
     });
 
+
+
+
+
+
+    
+
+
+
+
+
 };
 
 // Esperamos a que el DOM esté completamente cargado
 window.addEventListener('DOMContentLoaded', start);
+
+
