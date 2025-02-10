@@ -1,4 +1,4 @@
-import productos from './db/productos'; // Asegúrate de que este archivo exista y esté bien importado
+import productos from './db/productos'; 
 import productosb from './db/productosb';
 import principal from './db/principal';
 import './sass/main.scss'
@@ -24,22 +24,17 @@ const start = () => {
     botones.appendChild(boton2);
 
 
-    // Seleccionamos los elementos directamente
+   
     const contenedorProductos = document.getElementById('container-productos');
-    // const boton1 = document.getElementById('imag');
-    // const boton2 = document.getElementById('caract');
-    // const boton3 = document.getElementById('inicio')
+   
 
-
-
-    // Agregamos el evento al botón 1
+   
 
     let htmla = ''
-    //debugger
+   
     productos.forEach(prod => {
         console.log(prod)
-        //debugger
-        // html = html + '' === html += ''
+       
         htmla += `<div class="card">
             <article class="card__article">
                 <div class="card__image-container">
@@ -54,9 +49,8 @@ const start = () => {
             </article>
         </div>`
     })
-    // debugger
-    console.log(htmla) /* Voy a tener varios div.card * 5 -> */
-
+   
+    console.log(htmla) 
     contenedorProductos.innerHTML = htmla
 
 
@@ -65,10 +59,10 @@ const start = () => {
    boton1.addEventListener('click', () => {
         console.log('Botón 1 clickeado');
 
-        // Variable para guardar el HTML de los productos
+        
         let html = '';
         
-        // Generamos el HTML para cada producto
+       
         productos.forEach(prod => {
             html += `
             <div class="card">
@@ -86,7 +80,7 @@ const start = () => {
             </div>`;
         });
 
-        // Insertamos el HTML generado en el contenedor
+       
         contenedorProductos.innerHTML = html;
     });
 
@@ -95,10 +89,10 @@ const start = () => {
     boton2.addEventListener('click', () => {
         console.log('Botón 2 clickeado');
 
-        // Variable para guardar el HTML de los productos
+       
         let html2 = '';
 
-        // Generamos el HTML para cada producto
+       
         productosb.forEach(prod => {
             html2 += `
             <div class="card">
@@ -133,7 +127,7 @@ const start = () => {
     </div>`;
         });
 
-        // Insertamos el HTML generado en el contenedor
+        
         contenedorProductos.innerHTML = html2;
     });
 
@@ -142,10 +136,10 @@ const start = () => {
     boton3.addEventListener('click', () => {
         console.log('Botón 3 clickeado');
 
-        // Variable para guardar el HTML de los productos
+        
         let html3 = '';
 
-        // Generamos el HTML para cada producto
+       
         principal.forEach(prod => {
             html3 += `
             <div class="card">
@@ -163,7 +157,7 @@ const start = () => {
             </div>`;
         });
 
-        // Insertamos el HTML generado en el contenedor
+        
         contenedorProductos.innerHTML = html3;
     });
 
