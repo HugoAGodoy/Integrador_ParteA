@@ -7,8 +7,7 @@ body{
 }
 
 
-.section-cards {
-    // background-color: #f1f2f3;
+.section-cards { 
     padding: 1rem;
 }
 
@@ -17,7 +16,7 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     gap: 1rem;
-    // margin-top:50px; 
+  
 
     @media screen and (min-width: 992px) {
         & {
@@ -27,54 +26,24 @@ body{
         } 
     }
 
-    
-
-
 }
-
-// #imag{
-//     font-family: "RocknRoll One", serif;
-//     font-size: 1.4em;
-// }
-
-
-
-
-
-
 
 
 #descrip, #instr, #imag {
 
-
-
-
-
-    
-    @media screen and (min-width: 992px) {
-        & {
-            
-            
-        } 
-    }
-   
-    
-    
     font-family: "RocknRoll One", serif;
     background: linear-gradient(135deg, #fd2600, #ff9a02);
     color: rgb(2, 2, 2);
     font-size: 16px;
     font-weight: bold;
-    width:125px;
-    
+    width:125px;    
     border: 1px solid black;
     border-radius: 8px;
     margin: 1em;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(255, 65, 108, 0.4);
     transition: all 0.3s ease-in-out;
-    // position: relative;
-    // overflow: hidden;
+   
   
     &:hover {
       background: linear-gradient(135deg, #fd2600, #ff9a02);
@@ -89,20 +58,8 @@ body{
   }
 
 
-
-
-
-
-
 #imag {
-    // position:absolute;
-    // top: 180px;
-    // left: 0;
-    // z-index: 9999; 
-//  position:absolute;
-//     top: 150px;
-//     left: 0;
-//     z-index: 9999; 
+    
 margin-left:0px;
 position:relative;
 
@@ -112,8 +69,7 @@ position:relative;
 
     @media screen and (min-width: 992px) {
         & {
-    // margin:0px; 
-    // margin-left:10px;    
+      
     position:fixed;
     top: 220px;
     left: 0;
@@ -125,10 +81,6 @@ position:relative;
 }
 
 #instr{
-    // position: absolute;
-    // top:150px;
-    // left: 130px;
-    // z-index: 9999;
    
     margin-left:12px;
      position: relative;
@@ -151,10 +103,7 @@ position:relative;
 
 
 #descrip{
-    // position: absolute;
-    // top: 150px;
-    // left: 260px;
-    // z-index: 9999;
+  
     margin-left:12px;
     position: relative;
     top: 10px;

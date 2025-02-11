@@ -119,9 +119,10 @@ const start = () => {
                     <li>${prod.c15}</li> 
                 </ul>
               </div>  
+               <div class="title-descrip">
                 <h2 class="card__subheading">${prod.nombre}</h2>
                 <p class="card__description">${prod.descripcion}</p>
-
+               </div> 
             </div>
         </article>
     </div>`;
@@ -163,18 +164,9 @@ const start = () => {
 
 
 
-
-
-
-    
-
-
-
-
-
 };
 
-// Esperamos a que el DOM esté completamente cargado
+
 window.addEventListener('DOMContentLoaded', start);
 
 
