@@ -9,9 +9,11 @@ export default {
     },
     build: {
         rollupOptions: {
-            input: resolve(__dirname, 'index.html'),
-            nosotros: resolve(__dirname, 'src/pages/nosotros.html'),
-            contacto: resolve(__dirname, 'src/pages/contacto/contacto.html'),
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                nosotros: resolve(__dirname, 'nosotros.html'),
+                contacto: resolve(__dirname, 'contacto.html')
+            }
         }
     }
 }
